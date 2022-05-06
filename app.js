@@ -3,8 +3,8 @@ import 'dotenv/config'
 
 const fastify = Fastify({ logger: false })
 
-// import router from './configs/fastify.config';
-// router(fastify);
+import router from './configs/fastify.config';
+router(fastify);
 
 fastify.listen(process.env.SERVER_PORT , (err, address) => {
   if (err) {

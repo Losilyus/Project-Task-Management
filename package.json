@@ -1,0 +1,24 @@
+{
+  "name": "Project-Task-Management",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r esm app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -r esm app.js"
+  },
+  "repository": "git@github.com:Losilyus/Project-Task-Management.git",
+  "author": "losilyus <fahrettinakpinar+github@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.0",
+    "esm": "^3.2.25",
+    "fastify": "^3.29.0",
+    "nodemon": "^2.0.16",
+    "prisma": "^3.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.14.0"
+  }
+}

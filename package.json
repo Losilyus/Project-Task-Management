@@ -19,9 +19,13 @@
     "nodemailer": "^6.7.2",
     "nodemon": "^2.0.16",
     "redis": "^4.0.4",
+    "uuid": "^8.3.2",
     "winston": "^3.6.0"
   },
   "devDependencies": {
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2",
     "prisma": "^3.10.0"
   }
 }

@@ -1,0 +1,25 @@
+BEGIN TRY
+
+BEGIN TRAN;
+
+-- DropForeignKey
+ALTER TABLE [dbo].[Task] DROP CONSTRAINT [Task_ownerId_fkey];
+
+-- AlterTable
+ALTER TABLE [dbo].[Task] ALTER COLUMN [ownerId] INT NULL;
+
+-- AddForeignKey
+ALTER TABLE [dbo].[Task] ADD CONSTRAINT [Task_ownerId_fkey] FOREIGN KEY ([ownerId]) REFERENCES [dbo].[User]([id]) ON DELETE SET NULL ON UPDATE CASCADE;
+
+COMMIT TRAN;
+
+END TRY
+BEGIN CATCH
+
+IF @@TRANCOUNT > 0
+BEGIN
+    ROLLBACK TRAN;
+END;
+THROW
+
+END CATCH

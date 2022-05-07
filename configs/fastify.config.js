@@ -1,9 +1,9 @@
-import { Auth, Test } from '../api/routers/index';
+import { Auth, Test, Task } from '../api/routers/index';
 
-const Routers = Auth.concat( Test );
+const Routers = Auth.concat(Test, Task);
 
 export default (fastify) => {
-    Routers.forEach((route) => {
-        fastify.route(route);
-    })
+  Routers.forEach((route) => {
+    fastify.route(route);
+  });
 };

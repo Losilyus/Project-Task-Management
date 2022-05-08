@@ -1,5 +1,5 @@
 import { PrismaClient } from '@prisma/client';
-import { TasksGetSchema } from "../../validators/task.validate";
+import { TasksGetSchema } from '../../validators/task.validate';
 
 export default async (req, res) => {
   try {
@@ -8,7 +8,8 @@ export default async (req, res) => {
     const taskData = await prisma.task.findMany({
       where: {
         ownerId: req.user.id,
-        interval: undefined,
+        interval: req.query.interval,
+        priority: req.query.priority,
       },
     });
 

@@ -2,42 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af1d803a-78da-478b-a971-2850f192bec9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/api/controllers/task/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/controllers/task/task.delete.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/controllers/task/task.get.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/controllers/task/task.post.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/controllers/task/task.update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/controllers/task/tasks.get.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/routers/task.routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/validators/task.validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.exemple.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/controllers/auth/forgot.post.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/auth/forgot.post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/controllers/auth/forgot_change.post.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/auth/forgot_change.post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/controllers/auth/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/auth/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/controllers/auth/login.post.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/auth/login.post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/controllers/auth/profile.get.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/auth/profile.get.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/controllers/auth/register.post.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/auth/register.post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/controllers/auth/retry_verify_code.post.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/auth/retry_verify_code.post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/controllers/auth/verify.get.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/auth/verify.get.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/controllers/test/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/test/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/controllers/test/test.get.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/test/test.get.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/middlewares/authentication.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/middlewares/authentication.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/middlewares/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/middlewares/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/routers/auth.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/routers/auth.routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/routers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/routers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/routers/test.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/routers/test.routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/utils/forgot_verifaction.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/utils/forgot_verifaction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/utils/mail_verification.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/utils/mail_verification.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/validators/auth.validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/validators/auth.validate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/fastify.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/configs/fastify.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/modemailer.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/configs/modemailer.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/redis.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/configs/redis.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/migrations/20220507110859_/migration.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/migrations/migration_lock.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/controllers/task/tasks.get.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/task/tasks.get.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/validators/task.validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/validators/task.validate.js" afterDir="false" />
+    </list>
+    <list id="5ddcb6f2-f00c-43e9-b31d-923bd74f3979" name="Changes by user" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,11 +28,32 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/README.md">
+      <ranges>
+        <range start1="2" end1="5" start2="2" end2="6" changelist="af1d803a-78da-478b-a971-2850f192bec9" />
+        <range start1="6" end1="7" start2="7" end2="10" changelist="af1d803a-78da-478b-a971-2850f192bec9" />
+        <range start1="9" end1="16" start2="12" end2="17" changelist="af1d803a-78da-478b-a971-2850f192bec9" />
+        <range start1="17" end1="18" start2="18" end2="20" changelist="af1d803a-78da-478b-a971-2850f192bec9" />
+        <range start1="19" end1="20" start2="21" end2="23" changelist="af1d803a-78da-478b-a971-2850f192bec9" />
+        <range start1="21" end1="24" start2="24" end2="24" changelist="af1d803a-78da-478b-a971-2850f192bec9" />
+        <range start1="25" end1="26" start2="25" end2="26" changelist="5ddcb6f2-f00c-43e9-b31d-923bd74f3979" />
+        <range start1="27" end1="28" start2="27" end2="30" changelist="5ddcb6f2-f00c-43e9-b31d-923bd74f3979" />
+        <range start1="36" end1="37" start2="38" end2="39" changelist="af1d803a-78da-478b-a971-2850f192bec9" />
+        <range start1="38" end1="39" start2="40" end2="41" changelist="af1d803a-78da-478b-a971-2850f192bec9" />
+        <range start1="41" end1="42" start2="43" end2="43" changelist="af1d803a-78da-478b-a971-2850f192bec9" />
+        <range start1="43" end1="44" start2="44" end2="50" changelist="af1d803a-78da-478b-a971-2850f192bec9" />
+        <range start1="49" end1="50" start2="55" end2="57" changelist="af1d803a-78da-478b-a971-2850f192bec9" />
+        <range start1="52" end1="52" start2="59" end2="76" changelist="af1d803a-78da-478b-a971-2850f192bec9" />
+        <range start1="53" end1="53" start2="77" end2="84" changelist="af1d803a-78da-478b-a971-2850f192bec9" />
+      </ranges>
+    </file>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="NamedScopeManager">
-    <scope name="Eslint" pattern="file[Project-Task-Management]:config//*||file[Project-Task-Management]:api//*||file:app.js" />
+    <scope name="Eslint" pattern="file[Project-Task-Management]:config//*||file[Project-Task-Management]:api//*||file:app.js||file:README.md" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -71,24 +66,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/losilyus/Codex/MyGitRepos/Project-Task-Management/api/controllers/task",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/home/losilyus/Codex/MyGitRepos/Project-Task-Management/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/losilyus/Codex/MyGitRepos/Project-Task-Management&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.scopes&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/losilyus/Codex/MyGitRepos/Project-Task-Management/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/api/controllers/task" />
       <recent name="$PROJECT_DIR$/api/validators" />
       <recent name="$PROJECT_DIR$/api/controllers" />
@@ -133,7 +130,8 @@
       <workItem from="1651934718846" duration="1776000" />
       <workItem from="1651936518812" duration="135000" />
       <workItem from="1651936662049" duration="8160000" />
-      <workItem from="1651945422726" duration="10140000" />
+      <workItem from="1651945422726" duration="22864000" />
+      <workItem from="1651998398573" duration="2604000" />
     </task>
     <servers />
   </component>

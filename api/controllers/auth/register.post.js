@@ -1,5 +1,5 @@
 /// ////////////////LIBRARY IMPORTING////////////////////
-import { bcrypt } from 'bcrypt';
+import bcrypt from 'bcrypt';
 import { PrismaClient } from '@prisma/client';
 import jwt from 'jsonwebtoken';
 import { v4 as uuidv4 } from 'uuid';

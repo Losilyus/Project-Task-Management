@@ -19,7 +19,7 @@ export const forgotPassword = async (uuid, email) => {
     to: email,
     subject: 'Email Verification',
     text: 'Email Verification',
-    html: `<h1>Teşvik Email Forgot Passwords</h1> <h2>${verificationCode}</h2> <a href="${`${process.env.URL}api/auth/forgot/reset?token=${verificationCode}`}">Token</a>`,
+    html: `<h2>${verificationCode}</h2> <a href="${`${process.env.URL}api/auth/forgot/reset?token=${verificationCode}`}">Token</a>`,
   };
 
   await transporter.sendMail(mailOptions);

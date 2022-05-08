@@ -19,7 +19,7 @@ export const emailVerification = async (uuid, email) => {
     to: email,
     subject: 'Email Verification',
     text: 'Email Verification',
-    html: `<h1>Teşvik Email Verification</h1><br><br><a>${verificationCode}</a>`,
+    html: `<br><a>${verificationCode}</a>`,
   };
 
   await transporter.sendMail(mailOptions);

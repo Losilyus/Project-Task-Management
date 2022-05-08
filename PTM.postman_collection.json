@@ -1,0 +1,376 @@
+{
+	"info": {
+		"_postman_id": "a37e011d-22d9-4481-8fb6-34d4dbb1d8bd",
+		"name": "PTM",
+		"description": "Burası Auth ile ilgili route'leri taşır.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Forgot",
+					"item": [
+						{
+							"name": "Forgot",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/api/auth/forgot",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"auth",
+										"forgot"
+									]
+								},
+								"description": "Maile token gönderir."
+							},
+							"response": []
+						},
+						{
+							"name": "Forgot Change",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"password\":\"\",\n\t\"retype_password\":\"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/api/auth/forgot_change?token=",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"auth",
+										"forgot_change"
+									],
+									"query": [
+										{
+											"key": "token",
+											"value": ""
+										}
+									]
+								},
+								"description": "Maile gelen token girilir."
+							},
+							"response": []
+						}
+					],
+					"description": "Bu klasörde \\`Forgot\\`'a istek atılır ardından gelen maildeki token kopyalanıp \\`Forgot Change\\` kısmına yeni şifre ile istek atılır."
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"\",\n\t\"email\":\"\",\n\t\"password\":\"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/auth/register",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						},
+						"description": "Kayıt olmak için `name` `email` `password` istekte gönderilir."
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\":\"\",\n\t\"password\":\"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/auth/login",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						},
+						"description": "Giriş yaparak token alınır ve Postman'in global değişkenlere yerleştirilir."
+					},
+					"response": []
+				},
+				{
+					"name": "Verify",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"code\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/auth/verify",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"verify"
+							]
+						},
+						"description": "Maile gelen doğrulama kodu ile istek atılır."
+					},
+					"response": []
+				},
+				{
+					"name": "Retry Verify",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"code\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/auth/retry_verify_code",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"retry_verify_code"
+							]
+						},
+						"description": "Yeniden doğrulama kodu gönderilir."
+					},
+					"response": []
+				}
+			],
+			"description": "Burası auth ları taşır"
+		},
+		{
+			"name": "Task",
+			"item": [
+				{
+					"name": "Task Add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"\",\n\t\"description\":\"\",\n\t\"interval\":\"DAILY\",\n\t\"priority\":\"HIGH\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/task",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"task"
+							]
+						},
+						"description": "Yeni task ekleme."
+					},
+					"response": []
+				},
+				{
+					"name": "Tasks",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{TOKEN}}",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{URL}}/api/tasks",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"tasks"
+							],
+							"query": [
+								{
+									"key": "interval",
+									"value": "WEEKLY",
+									"disabled": true
+								},
+								{
+									"key": "priority",
+									"value": "LOW",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Taskları listelemeye yarar.\n\nTasklar query ile filtrelenebilir\n\n**`/?interval=&priority=`**\n\n`Interval` belirli zaman dilimleri girilebilir: `DAILY` `WEEKLY` `MONTHLY`\n\n`PRIORITY` belirli önemlilik dereceleri girilebilir: `LOW`, `MEDIUM`, `HIGH`, `URGENT`"
+					},
+					"response": []
+				},
+				{
+					"name": "Task",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/task?name=",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"task"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": ""
+								}
+							]
+						},
+						"description": "Task görüntüleme."
+					},
+					"response": []
+				},
+				{
+					"name": "Task Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"<NAME>\",\n\t\"description\":\"<description>\",\n\t\"interval\":\"DAILY\",\n\t\"priority\":\"LOW\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/task?id=<ID>",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"task"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "<ID>"
+								}
+							]
+						},
+						"description": "Task güncelleme."
+					},
+					"response": []
+				},
+				{
+					"name": "Task Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/task?id=",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"task"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "Task silme."
+					},
+					"response": []
+				}
+			],
+			"description": "Burası `Task`ları taşır"
+		}
+	]
+}
